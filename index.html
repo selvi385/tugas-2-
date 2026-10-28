@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuaca Jakarta</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🌤 Cuaca Jakarta</h1>
+      <p>Prakiraan temperatur per jam</p>
+      <p id="status">Memuat data...</p>
+      <table>
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>time</th>
+            <th>temperature_2m (°C)</th>
+          </tr>
+        </thead>
+        <tbody id="weather-data"></tbody>
+      </table>
+      <button onclick="loadWeather()">Muat Ulang</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
